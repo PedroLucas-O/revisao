@@ -1,35 +1,48 @@
-// let nome = prompt("Digite Seu nome:");
-// let corFav = prompt("Digite Sua Cor Favorita:");
+// let estudante = {
+//     nome: 'Pedro',
+//     sobrenome: 'Lucas',
+//     matricula: '11356',
+//     notas:[10, 9, 10]
+// }
+// estudante.modulo = '2° série'
+// console.log(estudante)
+// // console.log(estudante.modulo)
+// // console.log(estudante.notas[1])
+// // console.log(estudante.nome)
 
-// console.log("Olá " +nome+ ", Sua cor favorita é: " +corFav+ "?")
-// console.log(`Seu nome é: ${nome.toUpperCase()}? \n E sua cor favorita é: ${corFav.toUpperCase()}!`)
+// let copiaEstudante = {...estudante}
+// copiaEstudante.nome = 'astroDev'
+// console.log(copiaEstudante)
 
-// console.log(`Seu nome é: ${nome}? \n E sua cor favorita é: ${corFav}!`)
-// console.log(nome.length, corFav.length)
+// copiaEstudante.notas = [...estudante.notas, 9]
+// console.log(copiaEstudante)
 
-// console.log(nome.includes("a"))
-// console.log(corFav.includes("a"))
+// const estudanteKid = [];
+// estudanteKid.push(estudante, copiaEstudante)
+// console.log(estudanteKid)
+let sacolao = []
+let frutas =[
+    {
+        nome:'maça',
+        preço:2.31,
+        disponibilidade:true
+    },
 
-// console.log(nome.replace("j", " Deu um presente para: "))
 
-// let nome = "Pedro Lucas Oliveira Frazão";
-// let idade = 11;
-// console.log(nome)
-// nome = "maria"
-// console.log(nome)
+    {
+        nome:'oliveira',
+        preço:2.32,
+        disponibilidade:true
+    },
+    {
+        nome:'café',
+        preço:2.33,
+        disponibilidade:true
+    }
+]
 
-// console.log(typeof nome)
-// console.log(typeof idade)
 
-let a = 2;
-let b = 1;
-let c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
-c = a;
-a = b;
-b = c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
+// sacolao.push(frutas[])
+frutas.nome="joana"
+
+console.log(frutas)
