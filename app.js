@@ -1,35 +1,22 @@
-// let nome = prompt("Digite Seu nome:");
-// let corFav = prompt("Digite Sua Cor Favorita:");
+let palavra = ["carro", "cenoura", "nuvem"];
+let numero = [1, 2, 3];
+let variado = ["palavra", 1, true];
+let unico = [4];
+let vazio = [];
+let numero2 = [1, 2, 3, 4, 5];
+console.log(palavra.length);
+console.log(palavra[3]);
+console.log(palavra.includes("carro"));
+console.log(unico);
 
-// console.log("Olá " +nome+ ", Sua cor favorita é: " +corFav+ "?")
-// console.log(`Seu nome é: ${nome.toUpperCase()}? \n E sua cor favorita é: ${corFav.toUpperCase()}!`)
+let newWord = {...palavra};
+console.log(palavra);
+newWord = ["carro", "cenoura", "nuvem", "casamento"]
+console.log(newWord);
+numero.push(4)
 
-// console.log(`Seu nome é: ${nome}? \n E sua cor favorita é: ${corFav}!`)
-// console.log(nome.length, corFav.length)
-
-// console.log(nome.includes("a"))
-// console.log(corFav.includes("a"))
-
-// console.log(nome.replace("j", " Deu um presente para: "))
-
-// let nome = "Pedro Lucas Oliveira Frazão";
-// let idade = 11;
-// console.log(nome)
-// nome = "maria"
-// console.log(nome)
-
-// console.log(typeof nome)
-// console.log(typeof idade)
-
-let a = 2;
-let b = 1;
-let c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
-c = a;
-a = b;
-b = c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
+let copiaNumero2 = numero2.slice()
+copiaNumero2.splice(4, 1)
+copiaNumero2.splice(1, 1)
+copiaNumero2.push(6)
+console.log(copiaNumero2)
