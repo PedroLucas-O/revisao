@@ -1,35 +1,32 @@
-// let nome = prompt("Digite Seu nome:");
-// let corFav = prompt("Digite Sua Cor Favorita:");
+function imprimirOlaMundo () {
+    console.log ('Olá mundo!');
+}
 
-// console.log("Olá " +nome+ ", Sua cor favorita é: " +corFav+ "?")
-// console.log(`Seu nome é: ${nome.toUpperCase()}? \n E sua cor favorita é: ${corFav.toUpperCase()}!`)
+imprimirOlaMundo ()
 
-// console.log(`Seu nome é: ${nome}? \n E sua cor favorita é: ${corFav}!`)
-// console.log(nome.length, corFav.length)
+function recebendoNome (nome) {
+    console.log (`Olá ${nome}`)
+}
 
-// console.log(nome.includes("a"))
-// console.log(corFav.includes("a"))
+recebendoNome ('nome1')
+recebendoNome ('nome2')
+recebendoNome ('nome3')
 
-// console.log(nome.replace("j", " Deu um presente para: "))
+function recebendoNumero (numero1, numero2) {
+    console.log (numero1 + numero2)
+    // return (numero1 + numero2)
+}
 
-// let nome = "Pedro Lucas Oliveira Frazão";
-// let idade = 11;
-// console.log(nome)
-// nome = "maria"
-// console.log(nome)
+recebendoNumero(3, 4)
 
-// console.log(typeof nome)
-// console.log(typeof idade)
+const retorno = recebendoNumero (3, 4)
+console.log (retorno)
 
-let a = 2;
-let b = 1;
-let c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
-c = a;
-a = b;
-b = c;
-console.log("A:" ,a);
-console.log("B:" ,b);
-console.log("C:" ,c);
+function arrayDeNumeros (array) {
+    const novoArray = []
+    novoArray.push (array [0])
+    return novoArray 
+}
+
+let retornaArray = arrayDeNumeros ([1, 2, 3])
+console.log(retornaArray)
